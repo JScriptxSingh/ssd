@@ -1,0 +1,15 @@
+.well-known/
+.DS_Store/
+.DS_Store
+
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+*.zip
+
+Thumbs.db

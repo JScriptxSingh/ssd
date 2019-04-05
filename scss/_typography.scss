@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+@import url('https://fonts.googleapis.com/css?family=Boogaloo');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Acme');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2.3rem;
+    border-left: 10px solid $site-accent;
+    padding-left: 10px;
+}
+
+h2 {
+    font-size: 2.1rem;
+    border-left: 8px solid $site-accent-level2;
+    padding-left: 9px;
+}
+
+h3 {
+    font-size: 1.9rem;
+    border-left: 6px solid $site-accent-level3;
+    padding-left: 8px;
+}
+
+h4 {
+    font-size: 1.7rem;
+    border-left: 4px solid $site-accent-level4;
+    padding-left: 7px;
+}
+
+h5 {
+    font-size: 1.5rem;
+    border-left: 3px solid $site-accent-level5;
+    padding-left: 6px;
+}
+
+h6 {
+    font-size: 1.3rem;
+    border-left: 2px solid $site-accent-level6;
+    padding-left: 5px;
+}

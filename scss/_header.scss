@@ -1,0 +1,117 @@
+// Header Styles
+
+header {
+    background-color: $bg-header-color;
+
+    .header-title-row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 7.5rem;
+
+        .header-title {
+            padding-left: em(35);
+
+            .school-name,
+            h1,
+            h2 {
+                border: none;
+                margin: 0;
+                padding: 0;
+                line-height: 1;
+            }
+
+            .school-name {
+                @include mq($tablet-portait) {
+                    & {
+                        display: none;
+                    }
+                }
+            }
+
+            h1,
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            @include mq($phone-wide) {
+                & {
+                    display: none;
+                }
+            }
+        }
+
+        @include mq($tablet-portait) {
+            & {
+                justify-content: left;
+
+                .header-title {
+                    padding-left: em(10);
+                }
+            }
+        }
+
+        .mobile-title {
+            display: none;
+
+            h1 {
+                border: none;
+            }
+
+            @include mq($phone-wide) {
+                & {
+                    display: block;
+                }
+            }
+        }
+
+        .navbar-toggler {
+            display: none;
+
+            @include mq($navbar-breakpoint) {
+                & {
+                    display: block;
+                    position: absolute;
+                    right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.home-banner {
+    position: relative;
+
+    img {
+        min-width: 100%;
+        max-height: 50vh;
+        object-fit: cover;
+    }
+
+    h1 {
+        border: none;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        width: 60%;
+        color: white;
+        font-family: 'Anton', sans-serif;
+
+        @include mq($tablet-landscape) {
+            & {
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 95%;
+            }
+        }
+
+        @include mq($phone-wide) {
+            & {
+                transform: translate(-50%, -20%);
+                font-size: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BCIT SSD Program - Contact Information</title>
+	<script>
+		if (document.location.protocol != "https:") {
+			document.location = document.URL.replace(/^http:/i, "https:");
+		}
+	</script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <header class="home-header">
+        <div class="header-title-row mx-auto">
+            <a class="logo" href="./index.html">
+                <img src="./images/bcit-logo.png" alt="bcit logo">
+            </a>
+            <div class="header-title">
+                <div class="school-name">
+                    <span>SCHOOL OF COMPUTING AND ACADEMIC STUDIES</span>
+                </div>
+                <h1 class="program-title">
+                    Software System Developer
+                </h1>
+                <h2 class="program-option">
+                    Web Programmer Option
+                </h2>
+            </div>
+            <div class="mobile-title mx-auto">
+                <h1>SSD</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto" id="nav-item-list">
+                    <a class="nav-item nav-link" href="./ProgramOverview.html">Overview</a>
+                    <a class="nav-item nav-link" href="./CourseSummary.html">Courses</a>
+                    <a class="nav-item nav-link" href="./Schedule.html">Schedule</a>
+                    <a class="nav-item nav-link" href="./Students.html">Students</a>
+                    <a class="nav-item nav-link" href="./Staff.html">Staff</a>
+                    <a class="nav-item nav-link" href="./E-Resources.html">E-Resources</a>
+                    <a class="nav-item nav-link" href="./Contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="contactContainer">
+            <h1>Contact Us</h1>
+            <div>
+                <section class="infoBox">
+                    <h2>Helpful Links</h2>
+                    <ul>
+                        <li><a href="https://secure.bcit.ca/sis/apply/">Start your application.</a></li>
+                        <li><a href="https://secure.bcit.ca/sis/apply/">Check your application status.</a></li>
+                        <li><a href="https://www.bcit.ca/international/">Find more information for international
+                                students.</a></li>
+                        <li><a href="https://www.bcit.ca/finaid/">Find more information about financial aids.</a></li>
+                    </ul>
+                </section>
+                <section class="infoBox">
+                    <h2>Contact Information</h2>
+                    <div class="contactInfo">
+                        <section class="box">
+                            <h4>For admission and program inquiries: </h4>
+                            <ul>
+                                <li><b>Phone: </b>604.412.7788</li>
+                                <li><b>Fax: </b>604.408.0921</li>
+                                <li><b>Email: </b>HTP@bcit.ca</li>
+                            </ul>
+                        </section>
+                        <section class="box">
+                            <h4>Mailing address: </h4>
+                            <ul>
+                                <li>
+                                    HTP Programs - BCIT Downtown Campus<br />
+                                    350 - 555 Seymour Street<br />
+                                    Vancouver, BC, Canada <br />
+                                    V6B 3H6
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <p><a href="https://www.bcit.ca/about/downtown.shtml">Campus info, map, and directions</a></p>
+                </section>
+            </div>
+            <section class="infoBox">
+                <h2>Contact Form</h2>
+                <form onSubmit="alert('Thank you for your feedback.');" method="post" class="form">
+                    <div class="formRow">
+                        <div class="formLabel">
+                            <label for="firstname">First name</label>
+                        </div>
+                        <div class="formInput">
+                            <input type="text" name="firstname" id="firstname" maxlength="80" placeholder="First Last"
+                                required>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formLabel">
+                            <label for="lastname">Last name</label>
+                        </div>
+                        <div class="formInput">
+                            <input type="text" name="lastname" id="lastname" maxlength="80" placeholder="Last Last"
+                                required>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formLabel">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="formInput">
+                            <input type="email" name="email" id="email" maxlength="80" placeholder="email@example.com"
+                                required>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formLabel">
+                            <label for="phone">Phone</label>
+                        </div>
+                        <div class="formInput">
+                            <input type="text" name="phone" id="phone" maxlength="30" placeholder="(123) 456 - 7890">
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="select">
+                            <label><input type="radio" name="status" value="CurrentStudent" required> Current Student</label><br>
+                            <label><input type="radio" name="status" value="ProsoectiveStudent"> Prosoective Student</label><br>
+                            <label><input type="radio" name="status" value="Instructor"> Instructor</label>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div>
+                            <label for="comments">Questions or Comments</label>
+                        </div>
+                        <div>
+                            <textarea name="comments" id="comments" rows="5" cols="23" required></textarea>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="actions">
+                            <input id="submit" type="submit" value="send &raquo; ">
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-row">
+            <div class="footer-about">
+                <h2>About SSD</h2>
+                <p>
+                    The Software Systems Developer (SSD) program (Web Programmer option) is an eight month, full-time
+                    business application development program offered by BCIT's School of Computing and Academic
+                    Studies, within the HTP department at the downtown Vancouver campus.
+                </p>
+            </div>
+            <nav class="footer-nav1">
+                <h2>Program Information</h2>
+                <ul>
+                    <li><a href="./ProgramOverview.html">Program Overview</a></li>
+                    <li><a href="./CourseSummary.html">Courses Summary</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-nav2">
+                <h2>Student Resources</h2>
+                <ul>
+                    <li><a href="./Schedule.html">Schedule</a></li>
+                    <li><a href="./Students.html">Current Students</a></li>
+                    <li><a href="./Staff.html">Staff</a></li>
+                    <li><a href="./E-Resources.html">E-Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="copy">&copy; 2018 BCIT SSD</p>
+    </footer>
+
+    <script src="./scripts/setActive.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

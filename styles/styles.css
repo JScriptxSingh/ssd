@@ -1,0 +1,271 @@
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css?family=Staatliches");
+@import url("https://fonts.googleapis.com/css?family=Boogaloo");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Acme");
+@import url("https://fonts.googleapis.com/css?family=Anton");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2.3rem;
+  border-left: 10px solid #d34d24;
+  padding-left: 10px;
+}
+
+h2 {
+  font-size: 2.1rem;
+  border-left: 8px solid rgba(211, 77, 36, 0.9);
+  padding-left: 9px;
+}
+
+h3 {
+  font-size: 1.9rem;
+  border-left: 6px solid rgba(211, 77, 36, 0.8);
+  padding-left: 8px;
+}
+
+h4 {
+  font-size: 1.7rem;
+  border-left: 4px solid rgba(211, 77, 36, 0.7);
+  padding-left: 7px;
+}
+
+h5 {
+  font-size: 1.5rem;
+  border-left: 3px solid rgba(211, 77, 36, 0.6);
+  padding-left: 6px;
+}
+
+h6 {
+  font-size: 1.3rem;
+  border-left: 2px solid rgba(211, 77, 36, 0.5);
+  padding-left: 5px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  margin-top: 45px;
+}
+main .intro .welcome .btn {
+  margin-top: 15px;
+  margin-bottom: 35px;
+  font-size: 1.2rem;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+wrapper {
+  max-width: 1024px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+header {
+  background-color: white;
+}
+header .header-title-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 7.5rem;
+}
+header .header-title-row .header-title {
+  padding-left: 2.1875em;
+}
+header .header-title-row .header-title .school-name,
+header .header-title-row .header-title h1,
+header .header-title-row .header-title h2 {
+  border: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+@media (max-width: 48em) {
+  header .header-title-row .header-title .school-name {
+    display: none;
+  }
+}
+header .header-title-row .header-title h1,
+header .header-title-row .header-title h2 {
+  font-size: 1.8rem;
+}
+@media (max-width: 36.25em) {
+  header .header-title-row .header-title {
+    display: none;
+  }
+}
+@media (max-width: 48em) {
+  header .header-title-row {
+    justify-content: left;
+  }
+  header .header-title-row .header-title {
+    padding-left: 0.625em;
+  }
+}
+header .header-title-row .mobile-title {
+  display: none;
+}
+header .header-title-row .mobile-title h1 {
+  border: none;
+}
+@media (max-width: 36.25em) {
+  header .header-title-row .mobile-title {
+    display: block;
+  }
+}
+header .header-title-row .navbar-toggler {
+  display: none;
+}
+@media (max-width: 61.9375em) {
+  header .header-title-row .navbar-toggler {
+    display: block;
+    position: absolute;
+    right: 10px;
+  }
+}
+
+.home-banner {
+  position: relative;
+}
+.home-banner img {
+  min-width: 100%;
+  max-height: 50vh;
+  object-fit: cover;
+}
+.home-banner h1 {
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 60%;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+@media (max-width: 64em) {
+  .home-banner h1 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+  }
+}
+@media (max-width: 36.25em) {
+  .home-banner h1 {
+    transform: translate(-50%, -20%);
+    font-size: 2rem;
+  }
+}
+
+.navbar {
+  background-color: white;
+}
+.navbar .active-link {
+  border-bottom: #d34d24 3px solid;
+}
+
+footer {
+  margin-top: 40px;
+  color: white;
+  background-color: #727272;
+}
+footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .footer-row div h2,
+footer .footer-row nav h2 {
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 2;
+  border-bottom: 2px solid;
+  padding-left: 10px;
+  font-family: 'Acme', sans-serif;
+  white-space: nowrap;
+}
+footer .footer-row div p,
+footer .footer-row nav p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+footer .footer-row .footer-about {
+  flex: 3;
+}
+@media (max-width: 64em) {
+  footer .footer-row .footer-about {
+    min-width: 100%;
+  }
+}
+footer .footer-row nav {
+  flex: 2;
+  margin-left: 10px;
+}
+@media (max-width: 64em) {
+  footer .footer-row nav.footer-nav1 {
+    margin-left: 0;
+  }
+}
+footer .footer-row nav ul {
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+footer .footer-row nav ul li {
+  text-decoration: none;
+}
+footer .footer-row nav ul li a {
+  color: white;
+}
+footer .footer-row nav ul li a:hover, footer .footer-row nav ul li a:focus, footer .footer-row nav ul li a:active {
+  text-decoration: underline;
+}
+@media (max-width: 36.25em) {
+  footer .footer-row nav {
+    min-width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+footer .copy {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #323232;
+}
+
+/*# sourceMappingURL=styles.css.map */

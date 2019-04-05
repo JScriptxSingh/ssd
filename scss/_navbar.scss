@@ -1,0 +1,9 @@
+// Main Nav Styles
+
+.navbar {
+    background-color: $nav-bg-color;
+
+    .active-link {
+        border-bottom: $site-accent 3px solid;
+    }
+}
