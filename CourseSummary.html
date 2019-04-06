@@ -7,12 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BCIT SSD Program - Courses Summary</title>
     <script>
-        if (document.location.protocol != "https:") {
+        // REDIRECT TO HTTPS PROTOCOL IF NOT IN DEVELOPMENT ENVIRONMENT
+        if (document.location.protocol != "https:" && !document.location.host.includes("localhost")) {
             document.location = document.URL.replace(/^http:/i, "https:");
         }
     </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
@@ -55,7 +58,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <div class="courseContainer">
             <h1>Course Summaries</h1>
             <section class="courses">
@@ -100,14 +103,15 @@
             </section>
         </div>
     </main>
+
     <footer>
-        <div class="footer-row">
+        <div class="footer-row container">
             <div class="footer-about">
                 <h2>About SSD</h2>
                 <p>
                     The Software Systems Developer (SSD) program (Web Programmer option) is an eight month, full-time
-                    business application development program offered by BCIT's School of Computing and Academic Studies,
-                    within the HTP department at the downtown Vancouver campus.
+                    business application development program offered by BCIT's School of Computing and Academic
+                    Studies, within the HTP department at the downtown Vancouver campus.
                 </p>
             </div>
             <nav class="footer-nav1">
@@ -128,7 +132,7 @@
                 </ul>
             </nav>
         </div>
-        <p class="copy">&copy; 2018 BCIT SSD</p>
+        <p class="copy container-fluid">&copy; 2018 BCIT SSD</p>
     </footer>
 
     <script src="./scripts/setActive.js"></script>

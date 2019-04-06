@@ -195,6 +195,12 @@ header .header-title-row .navbar-toggler {
 .navbar .active-link {
   border-bottom: #d34d24 3px solid;
 }
+@media (max-width: 61.9375em) {
+  .navbar .active-link {
+    border-bottom: none;
+    font-weight: bold;
+  }
+}
 
 footer {
   margin-top: 40px;

@@ -5,5 +5,12 @@
 
     .active-link {
         border-bottom: $site-accent 3px solid;
+
+        @include mq($navbar-breakpoint) {
+            & {
+                border-bottom: none;
+                font-weight: bold;
+            }
+        }
     }
 }
