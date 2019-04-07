@@ -22,3 +22,13 @@ main {
         }
     }
 }
+
+table.overviewTable {
+    td:first-of-type {
+        font-weight: bold;
+        
+        &:after {
+            content: ":";
+        }
+    }
+}

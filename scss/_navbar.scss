@@ -10,6 +10,12 @@
             & {
                 border-bottom: none;
                 font-weight: bold;
+
+                &::before {
+                    border-left: $site-accent 3px solid; 
+                    content: "";
+                    padding-right: 20px;
+                }
             }
         }
     }

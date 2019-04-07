@@ -7,15 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BCIT SSD Program - Program Overview</title>
     <script>
-        // REDIRECT TO HTTPS PROTOCOL IF NOT IN DEVELOPMENT ENVIRONMENT
-        if (document.location.protocol != "https:" && !document.location.host.includes("localhost")) {
+        // REDIRECT TO HTTPS PROTOCOL IF NOT IN DEVELOPMENT ENVIRONMENT OR BEING TESTED ON LOCAL NETWORK
+        if (document.location.protocol != "https:" && !document.location.host.includes("localhost") && !Document
+            .location.host.includes("192")) {
             document.location = document.URL.replace(/^http:/i, "https:");
         }
     </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
@@ -80,34 +81,29 @@
                     sound logical and reasoning skills. Applicants with no knowledge are advised to take a programming
                     language course, such as introduction to object-oriented programming, C#, or Java.</p>
             </section>
-            <table class="overviewTable">
-                <caption>SOFTWARE SYSTEMS DEVELOPER - Web Programmer Option</caption>
-                <tbody>
-                    <tr>
-                        <td><b>BCIT Credential:
-                            </b></td>
-                        <td>
-                            Certificate
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><b>Program Location:</b></td>
-                        <td>Downtown Vancouver
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><b>Program Length:</b></td>
-                        <td>Eight months, Full-time
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><b>Program Start / End:</b></td>
-                        <td>
-                            Current Intake: September 10, 2017 - May 10, 2018<br />
-                            Next Intake: September 10, 2018 - May 10, 2019</td>
-                    </tr>
-                </tbody>
-            </table>
+            <section class="overviewTable">
+                <caption class="section-title">SOFTWARE SYSTEMS DEVELOPER - Web Programmer Option</caption>
+                <div class="row">
+                    <span class="col-lg-3">BCIT Credential</span>
+                    <span class="col-lg-9">Certificate</span>
+                </div>
+                <div class="row">
+                    <span class="col-lg-3">Program Location</span>
+                    <span class="col-lg-9">Downtown Vancouver
+                    </span>
+                </div>
+                <div class="row">
+                    <span class="col-lg-3">Program Length</span>
+                    <span class="col-lg-9">Eight months, Full-time
+                    </span>
+                </div>
+                <div class="row">
+                    <span class="col-lg-3">Program Start / End</span>
+                    <span class="col-lg-9">
+                        Current Intake: September 10, 2017 - May 10, 2018<br />
+                        Next Intake: September 10, 2018 - May 10, 2019</span>
+                </div>
+            </section>
             <div class="requirements">
                 <section>
                     <h2>Entrance requirements</h2>
