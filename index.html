@@ -8,7 +8,7 @@
     <title>BCIT SSD Program Website</title>
     <script>
         // REDIRECT TO HTTPS PROTOCOL IF NOT IN DEVELOPMENT ENVIRONMENT OR BEING TESTED ON LOCAL NETWORK
-        if (document.location.protocol != "https:" && !document.location.host.includes("localhost") && !Document
+        if (document.location.protocol != "https:" && !document.location.host.includes("localhost") && !document
             .location.host.includes("192")) {
             document.location = document.URL.replace(/^http:/i, "https:");
         }
