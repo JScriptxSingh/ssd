@@ -86,11 +86,19 @@ main .intro .welcome .btn {
   padding-right: 30px;
 }
 
-table.overviewTable td:first-of-type {
+section.overviewTable span:first-of-type {
   font-weight: bold;
 }
-table.overviewTable td:first-of-type:after {
+section.overviewTable span:first-of-type:after {
   content: ":";
+}
+@media (max-width: 61.9375em) {
+  section.overviewTable span:first-of-type:after {
+    display: none;
+  }
+}
+section.overviewTable .row {
+  padding-bottom: 10px;
 }
 
 wrapper {

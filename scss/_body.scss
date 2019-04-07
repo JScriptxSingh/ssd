@@ -23,12 +23,23 @@ main {
     }
 }
 
-table.overviewTable {
-    td:first-of-type {
+section.overviewTable {
+    span:first-of-type {
         font-weight: bold;
-        
+
         &:after {
             content: ":";
+
+            @include mq($navbar-breakpoint) {
+                & {
+                    display: none;
+                }
+            }
         }
     }
+
+    .row {
+        padding-bottom: 10px;
+    }
+
 }
