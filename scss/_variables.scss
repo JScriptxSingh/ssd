@@ -3,8 +3,9 @@ $gallery-margin : 6vw;
 $content-margin : 4vw;
 
 // Colours
-$bg-body-color: white;
+$bg-body-color: rgba(214, 214, 214, 0.685);
 $bg-header-color: white;
+$bg-section-color: white;
 
 $table-row-borders: rgba(128, 128, 128, 0.452);
 
@@ -32,7 +33,7 @@ $link-hover-selector: '&:hover, &:focus, &:active';
 $tablet-landscape: em(1024);
 $navbar-breakpoint: em(991);
 $tablet-landscape-medium: em(860);
-$tablet-portait: em(768);
+$tablet-portait: em(767);
 $tablet-portrait-medium: em(720);
 $phone-wide: em(580);
 $phone: em(480);

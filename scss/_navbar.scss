@@ -1,7 +1,9 @@
 // Main Nav Styles
 
-.navbar {
+nav.navbar {
     background-color: $nav-bg-color;
+    padding-top: 0;
+    padding-bottom: 0;
 
     .active-link {
         border-bottom: $site-accent 3px solid;
@@ -10,12 +12,12 @@
             & {
                 border-bottom: none;
                 font-weight: bold;
+            }
 
-                &::before {
-                    border-left: $site-accent 3px solid; 
-                    content: "";
-                    padding-right: 20px;
-                }
+            &::before {
+                border-left: $site-accent 3px solid;
+                content: "";
+                padding-right: 20px;
             }
         }
     }

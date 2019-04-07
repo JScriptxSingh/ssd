@@ -4,6 +4,41 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Acme");
 @import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 2.3rem;
+  padding-left: 10px;
+}
+
+h2 {
+  font-size: 2.1rem;
+  padding-left: 9px;
+}
+
+h3 {
+  font-size: 1.9rem;
+  padding-left: 8px;
+}
+
+h4 {
+  font-size: 1.7rem;
+  padding-left: 7px;
+}
+
+h5 {
+  font-size: 1.5rem;
+  padding-left: 6px;
+}
+
+h6 {
+  font-size: 1.3rem;
+  padding-left: 5px;
+}
+
 h1,
 h2,
 h3,
@@ -12,43 +47,38 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-weight: 300;
+  font-weight: bold;
+}
+@media (max-width: 36.25em) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding: 0;
+  }
 }
 
-h1 {
-  font-size: 2.3rem;
-  border-left: 10px solid #d34d24;
-  padding-left: 10px;
+span.display-4 {
+  display: block;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+@media (min-width: 61.9375em) {
+  span.display-4 {
+    text-transform: uppercase;
+  }
 }
 
-h2 {
-  font-size: 2.1rem;
-  border-left: 8px solid rgba(211, 77, 36, 0.9);
-  padding-left: 9px;
+@media (max-width: 47.9375em) {
+  section.overviewTable span:first-of-type {
+    text-transform: uppercase;
+  }
 }
 
-h3 {
-  font-size: 1.9rem;
-  border-left: 6px solid rgba(211, 77, 36, 0.8);
-  padding-left: 8px;
-}
-
-h4 {
-  font-size: 1.7rem;
-  border-left: 4px solid rgba(211, 77, 36, 0.7);
-  padding-left: 7px;
-}
-
-h5 {
-  font-size: 1.5rem;
-  border-left: 3px solid rgba(211, 77, 36, 0.6);
-  padding-left: 6px;
-}
-
-h6 {
-  font-size: 1.3rem;
-  border-left: 2px solid rgba(211, 77, 36, 0.5);
-  padding-left: 5px;
+main .intro .welcome .btn {
+  font-size: 1.2rem;
 }
 
 html {
@@ -69,36 +99,48 @@ body {
 }
 
 body {
-  background-color: white;
+  background-color: rgba(214, 214, 214, 0.685);
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+}
+
+.bg-white {
+  background-color: white;
 }
 
 main {
-  margin-top: 45px;
+  margin-top: 20px;
 }
 main .intro .welcome .btn {
   margin-top: 15px;
   margin-bottom: 35px;
-  font-size: 1.2rem;
   padding: 15px;
   padding-left: 30px;
   padding-right: 30px;
 }
 
-section.overviewTable span:first-of-type {
-  font-weight: bold;
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
+section:last-of-type {
+  margin-bottom: 0;
+}
+
 section.overviewTable span:first-of-type:after {
   content: ":";
 }
-@media (max-width: 61.9375em) {
+@media (max-width: 47.9375em) {
   section.overviewTable span:first-of-type:after {
     display: none;
   }
 }
 section.overviewTable .row {
   padding-bottom: 10px;
+}
+section.overviewTable .row:last-of-type {
+  padding-bottom: 0;
 }
 
 wrapper {
@@ -128,7 +170,7 @@ header .header-title-row .header-title h2 {
   padding: 0;
   line-height: 1;
 }
-@media (max-width: 48em) {
+@media (max-width: 47.9375em) {
   header .header-title-row .header-title .school-name {
     display: none;
   }
@@ -142,7 +184,7 @@ header .header-title-row .header-title h2 {
     display: none;
   }
 }
-@media (max-width: 48em) {
+@media (max-width: 47.9375em) {
   header .header-title-row {
     justify-content: left;
   }
@@ -154,11 +196,15 @@ header .header-title-row .mobile-title {
   display: none;
 }
 header .header-title-row .mobile-title h1 {
-  border: none;
+  margin: 0;
+  padding: 0;
 }
 @media (max-width: 36.25em) {
   header .header-title-row .mobile-title {
     display: block;
+  }
+  header .header-title-row .mobile-title h1 {
+    font-size: 3rem;
   }
 }
 header .header-title-row .navbar-toggler {
@@ -181,7 +227,6 @@ header .header-title-row .navbar-toggler {
   object-fit: cover;
 }
 .home-banner h1 {
-  border: none;
   position: absolute;
   top: 50%;
   left: 30%;
@@ -199,23 +244,26 @@ header .header-title-row .navbar-toggler {
 }
 @media (max-width: 36.25em) {
   .home-banner h1 {
-    transform: translate(-50%, -20%);
-    font-size: 2rem;
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
   }
 }
 
-.navbar {
+nav.navbar {
   background-color: white;
+  padding-top: 0;
+  padding-bottom: 0;
 }
-.navbar .active-link {
+nav.navbar .active-link {
   border-bottom: #d34d24 3px solid;
 }
 @media (max-width: 61.9375em) {
-  .navbar .active-link {
+  nav.navbar .active-link {
     border-bottom: none;
     font-weight: bold;
   }
-  .navbar .active-link::before {
+  nav.navbar .active-link::before {
     border-left: #d34d24 3px solid;
     content: "";
     padding-right: 20px;

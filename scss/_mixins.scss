@@ -6,3 +6,8 @@
     }
 }
 
+@mixin rmq($w) {
+    @media (min-width: $w) {
+        @content;
+    }
+}

@@ -3,18 +3,20 @@
 body {
     background-color: $bg-body-color;
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-white {
+    background-color: white;
 }
 
 main {
-    margin-top: 45px;
+    margin-top: 20px;
 
     .intro {
         .welcome {
             .btn {
                 margin-top: 15px;
                 margin-bottom: 35px;
-                font-size: 1.2rem;
                 padding: 15px;
                 padding-left: 30px;
                 padding-right: 30px;
@@ -23,14 +25,24 @@ main {
     }
 }
 
+section {
+    background-color: $bg-section-color;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
 section.overviewTable {
     span:first-of-type {
-        font-weight: bold;
 
         &:after {
             content: ":";
 
-            @include mq($navbar-breakpoint) {
+            @include mq($tablet-portait) {
                 & {
                     display: none;
                 }
@@ -40,6 +52,10 @@ section.overviewTable {
 
     .row {
         padding-bottom: 10px;
+
+        &:last-of-type {
+            padding-bottom: 0;
+        }
     }
 
 }

@@ -56,12 +56,16 @@ header {
             display: none;
 
             h1 {
-                border: none;
+                margin: 0;
+                padding: 0;
             }
 
             @include mq($phone-wide) {
                 & {
                     display: block;
+                    h1 {
+                    font-size: 3rem;
+                    }
                 }
             }
         }
@@ -90,7 +94,6 @@ header {
     }
 
     h1 {
-        border: none;
         position: absolute;
         top: 50%;
         left: 30%;
@@ -109,8 +112,9 @@ header {
 
         @include mq($phone-wide) {
             & {
-                transform: translate(-50%, -20%);
-                font-size: 2rem;
+                font-size: 1.6rem;
+                padding: 0;
+                margin: 0;
             }
         }
     }
