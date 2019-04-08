@@ -67,6 +67,19 @@ section h2 {
   font-size: 1.9rem;
   width: 100%;
 }
+@media (max-width: 36.25em) {
+  section h2 {
+    font-size: 1.7rem;
+  }
+}
+section h4 {
+  font-size: 1.6rem;
+}
+@media (max-width: 36.25em) {
+  section h4 {
+    font-size: 1.4rem;
+  }
+}
 
 span.display-4 {
   display: block;
@@ -145,6 +158,15 @@ body {
   background-color: white;
 }
 
+.no-mb-lg {
+  margin-bottom: 0;
+}
+@media (max-width: 61.9375em) {
+  .no-mb-lg {
+    margin-bottom: 20px;
+  }
+}
+
 main {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -159,20 +181,20 @@ main .intro .welcome .btn {
 main section {
   background-color: white;
   padding: 20px;
-  margin-bottom: 20px;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 main section:last-of-type {
   margin-bottom: 0;
 }
 main section.overviewTable div.row {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 main section.overviewTable div.row:last-of-type {
   padding-bottom: 0;
 }
 main section.overviewTable div.row div:first-of-type:after {
-  content: " :";
+  content: ":";
 }
 @media (max-width: 48em) {
   main section.overviewTable div.row div:first-of-type:after {
@@ -181,7 +203,7 @@ main section.overviewTable div.row div:first-of-type:after {
 }
 @media (max-width: 48em) {
   main section.overviewTable div.row div:first-of-type {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 }
 main section section.resource p {
@@ -200,6 +222,9 @@ main section section.resource img {
     padding-right: 0;
   }
 }
+main section section.course h4 {
+  padding-left: 0;
+}
 main section.staff {
   display: flex;
   flex-wrap: wrap;
@@ -208,12 +233,36 @@ main section.staff {
 main section.staff section.person {
   width: 49%;
 }
+main section.staff section.person h4 {
+  padding: 0;
+  font-weight: 900;
+  margin-bottom: 0;
+}
 main section.staff section.person p {
   margin: 0;
+  font-size: 1rem;
+}
+main section.staff section.person p.role {
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+main section.staff section.person p.email {
+  color: #d34d24;
 }
 @media (max-width: 61.9375em) {
   main section.staff section.person {
     width: 100%;
+  }
+}
+@media (max-width: 30em) {
+  main section.staff {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  main section.staff section.person {
+    padding-left: 10px;
+    padding-left: 10px;
   }
 }
 @media (max-width: 48em) {
