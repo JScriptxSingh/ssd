@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css?family=Acme');
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+@import url('https://fonts.googleapis.com/css?family=Carter+One');
 
 
 body {
@@ -90,8 +93,8 @@ main {
         }
     }
 
-
-    div.student-list-head {
+    div.student-list-head,
+    div.student-list-mobile-title {
         font-size: 1.2rem;
     }
 

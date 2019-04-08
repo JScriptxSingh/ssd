@@ -99,7 +99,7 @@ header {
         left: 30%;
         width: 60%;
         color: white;
-        font-family: 'Anton', sans-serif;
+        font-family: 'Carter One', cursive;
 
         @include mq($tablet-landscape) {
             & {
@@ -112,9 +112,7 @@ header {
 
         @include mq($phone-wide) {
             & {
-                font-size: 1.6rem;
-                padding: 0;
-                margin: 0;
+                display: none;
             }
         }
     }

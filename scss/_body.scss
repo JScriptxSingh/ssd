@@ -1,5 +1,12 @@
 // Body Styles
 
+%table-header-style {
+    background-color: $site-accent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+  }
+
 body {
     background-color: $bg-body-color;
     width: 100%;
@@ -11,6 +18,7 @@ body {
 
 main {
     margin-top: 20px;
+    margin-bottom: 20px;
 
     .intro {
         .welcome {
@@ -69,15 +77,31 @@ main {
         }
     }
 
+    @include mq($phone-wide) {
+        &.student-list {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+    }
+
     div.student-list-head {
-        background-color: $site-accent;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        color: white;
+        @extend %table-header-style;
 
         @include mq($tablet-portait) {
             & {
                 display: none;
+            }
+        }
+    }
+
+    div.student-list-mobile-title {
+        display: none;
+        text-transform: uppercase;
+        @extend %table-header-style;
+
+        @include mq($tablet-portait) {
+            & {
+                display: block;
             }
         }
     }
@@ -91,7 +115,7 @@ main {
                 background-color: $table-highlight-odd;
 
                 .fab {
-                    color:  $site-accent;
+                    color: $site-accent;
                     font-size: 1.6rem;
                 }
             }
@@ -100,7 +124,7 @@ main {
                 background-color: $table-highlight-even;
 
                 .fab {
-                    color:  $site-accent;
+                    color: $site-accent;
                     font-size: 1.6rem;
                 }
             }

@@ -5,6 +5,9 @@
 @import url("https://fonts.googleapis.com/css?family=Acme");
 @import url("https://fonts.googleapis.com/css?family=Anton");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Bangers");
+@import url("https://fonts.googleapis.com/css?family=Passion+One");
+@import url("https://fonts.googleapis.com/css?family=Carter+One");
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -80,7 +83,8 @@ span.display-4 {
 main .intro .welcome .btn {
   font-size: 1.2rem;
 }
-main div.student-list-head {
+main div.student-list-head,
+main div.student-list-mobile-title {
   font-size: 1.2rem;
 }
 main div.students div.row {
@@ -104,6 +108,13 @@ body {
   margin: 0;
 }
 
+main div.student-list-head, main div.student-list-mobile-title {
+  background-color: #d34d24;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
 body {
   background-color: rgba(214, 214, 214, 0.685);
   width: 100%;
@@ -115,6 +126,7 @@ body {
 
 main {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 main .intro .welcome .btn {
   margin-top: 15px;
@@ -156,15 +168,24 @@ main section.overviewTable div.row div:first-of-type:after {
     display: none;
   }
 }
-main div.student-list-head {
-  background-color: #d34d24;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: white;
+@media (max-width: 36.25em) {
+  main.student-list {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
 @media (max-width: 48em) {
   main div.student-list-head {
     display: none;
+  }
+}
+main div.student-list-mobile-title {
+  display: none;
+  text-transform: uppercase;
+}
+@media (max-width: 48em) {
+  main div.student-list-mobile-title {
+    display: block;
   }
 }
 main div.students div.row {
@@ -275,7 +296,7 @@ header .header-title-row .navbar-toggler {
   left: 30%;
   width: 60%;
   color: white;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Carter One', cursive;
 }
 @media (max-width: 64em) {
   .home-banner h1 {
@@ -287,9 +308,7 @@ header .header-title-row .navbar-toggler {
 }
 @media (max-width: 36.25em) {
   .home-banner h1 {
-    font-size: 1.6rem;
-    padding: 0;
-    margin: 0;
+    display: none;
   }
 }
 
@@ -314,7 +333,6 @@ nav.navbar .active-link {
 }
 
 footer {
-  margin-top: 40px;
   color: white;
   background-color: #727272;
 }
