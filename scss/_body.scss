@@ -23,39 +23,87 @@ main {
             }
         }
     }
-}
 
-section {
-    background-color: $bg-section-color;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    section {
+        background-color: $bg-section-color;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
 
-    &:last-of-type {
-        margin-bottom: 0;
-    }
-}
+        &:last-of-type {
+            margin-bottom: 0;
+        }
 
-section.overviewTable {
-    span:first-of-type {
+        &.overviewTable {
+            div.row {
+                padding-bottom: 10px;
 
-        &:after {
-            content: ":";
+                &:last-of-type {
+                    padding-bottom: 0;
+                }
 
-            @include mq($tablet-portait) {
-                & {
-                    display: none;
+                div:first-of-type {
+                    &:after {
+                        content: " :";
+
+                        @include mq($tablet-portait) {
+                            & {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    @include mq($tablet-portait) {
+                        font-size: 1.4rem;
+                    }
                 }
             }
         }
     }
 
-    .row {
-        padding-bottom: 10px;
-
-        &:last-of-type {
-            padding-bottom: 0;
+    @include mq($tablet-portait) {
+        &.student-list {
+            .display-4 {
+                display: none;
+            }
         }
     }
 
+    div.student-list-head {
+        background-color: $site-accent;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: white;
+
+        @include mq($tablet-portait) {
+            & {
+                display: none;
+            }
+        }
+    }
+
+    div.students {
+        div.row {
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            &:nth-child(odd) {
+                background-color: $table-highlight-odd;
+
+                .fab {
+                    color:  $site-accent;
+                    font-size: 1.6rem;
+                }
+            }
+
+            &:nth-child(even) {
+                background-color: $table-highlight-even;
+
+                .fab {
+                    color:  $site-accent;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
 }

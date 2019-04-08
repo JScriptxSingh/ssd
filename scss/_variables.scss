@@ -20,11 +20,8 @@ $footer-accent-bg : #323232;
 $border-light: rgba(0, 0, 0, 0.205);
 
 $site-accent: rgb(211, 77, 36);
-$site-accent-level2: rgba(211, 77, 36, 0.900);
-$site-accent-level3: rgba(211, 77, 36, 0.800);
-$site-accent-level4: rgba(211, 77, 36, 0.700);
-$site-accent-level5: rgba(211, 77, 36, 0.600);
-$site-accent-level6: rgba(211, 77, 36, 0.500);
+$table-highlight-even: rgba(211, 77, 36, 0.37);
+$table-highlight-odd: white;
 
 // Utility variables
 $link-hover-selector: '&:hover, &:focus, &:active';
@@ -33,7 +30,7 @@ $link-hover-selector: '&:hover, &:focus, &:active';
 $tablet-landscape: em(1024);
 $navbar-breakpoint: em(991);
 $tablet-landscape-medium: em(860);
-$tablet-portait: em(767);
+$tablet-portait: em(768);
 $tablet-portrait-medium: em(720);
 $phone-wide: em(580);
 $phone: em(480);

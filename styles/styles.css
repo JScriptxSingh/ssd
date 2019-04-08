@@ -71,14 +71,20 @@ span.display-4 {
   }
 }
 
-@media (max-width: 47.9375em) {
-  section.overviewTable span:first-of-type {
+@media (max-width: 61.9375em) {
+  section.overviewTable .row div:first-of-type {
     text-transform: uppercase;
   }
 }
 
 main .intro .welcome .btn {
   font-size: 1.2rem;
+}
+main div.student-list-head {
+  font-size: 1.2rem;
+}
+main div.students div.row {
+  font-size: 1.1rem;
 }
 
 html {
@@ -117,30 +123,67 @@ main .intro .welcome .btn {
   padding-left: 30px;
   padding-right: 30px;
 }
-
-section {
+main section {
   background-color: white;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
 }
-section:last-of-type {
+main section:last-of-type {
   margin-bottom: 0;
 }
-
-section.overviewTable span:first-of-type:after {
-  content: ":";
+main section.overviewTable div.row {
+  padding-bottom: 10px;
 }
-@media (max-width: 47.9375em) {
-  section.overviewTable span:first-of-type:after {
+main section.overviewTable div.row:last-of-type {
+  padding-bottom: 0;
+}
+main section.overviewTable div.row div:first-of-type:after {
+  content: " :";
+}
+@media (max-width: 48em) {
+  main section.overviewTable div.row div:first-of-type:after {
     display: none;
   }
 }
-section.overviewTable .row {
-  padding-bottom: 10px;
+@media (max-width: 48em) {
+  main section.overviewTable div.row div:first-of-type {
+    font-size: 1.4rem;
+  }
 }
-section.overviewTable .row:last-of-type {
-  padding-bottom: 0;
+@media (max-width: 48em) {
+  main.student-list .display-4 {
+    display: none;
+  }
+}
+main div.student-list-head {
+  background-color: #d34d24;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+@media (max-width: 48em) {
+  main div.student-list-head {
+    display: none;
+  }
+}
+main div.students div.row {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+main div.students div.row:nth-child(odd) {
+  background-color: white;
+}
+main div.students div.row:nth-child(odd) .fab {
+  color: #d34d24;
+  font-size: 1.6rem;
+}
+main div.students div.row:nth-child(even) {
+  background-color: rgba(211, 77, 36, 0.37);
+}
+main div.students div.row:nth-child(even) .fab {
+  color: #d34d24;
+  font-size: 1.6rem;
 }
 
 wrapper {
@@ -170,7 +213,7 @@ header .header-title-row .header-title h2 {
   padding: 0;
   line-height: 1;
 }
-@media (max-width: 47.9375em) {
+@media (max-width: 48em) {
   header .header-title-row .header-title .school-name {
     display: none;
   }
@@ -184,7 +227,7 @@ header .header-title-row .header-title h2 {
     display: none;
   }
 }
-@media (max-width: 47.9375em) {
+@media (max-width: 48em) {
   header .header-title-row {
     justify-content: left;
   }

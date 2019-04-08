@@ -71,9 +71,11 @@ span.display-4 {
 }
 
 section.overviewTable {
-    span:first-of-type {
-        @include mq($tablet-portait) {
-            text-transform: uppercase;
+    .row {
+        div:first-of-type {
+            @include mq($navbar-breakpoint) {
+                text-transform: uppercase;
+            }
         }
     }
 }
@@ -85,6 +87,17 @@ main {
             .btn {
                 font-size: 1.2rem;
             }
+        }
+    }
+
+
+    div.student-list-head {
+        font-size: 1.2rem;
+    }
+
+    div.students {
+        div.row {
+            font-size: 1.1rem;
         }
     }
 }

@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BCIT SSD Program - Students</title>
-    <script>
+    <!-- <script>
         // REDIRECT TO HTTPS PROTOCOL IF NOT IN DEVELOPMENT ENVIRONMENT OR BEING TESTED ON LOCAL NETWORK
         if (document.location.protocol != "https:" && !document.location.host.includes("localhost")) {
             document.location = document.URL.replace(/^http:/i, "https:");
         }
-    </script>
+    </script> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
@@ -57,25 +57,28 @@
             </div>
         </nav>
     </header>
-    <main class="container">
+    <main class="container student-list">
+        <span class="display-4 text-center">Current Students</span>
+        <div class="row student-list-head">
+            <span class="col-md-3">First Name</span>
+            <span class="col-md-3">Last Name</span>
+            <span class="col-md-4">BCIT Email</span>
+            <span class="col-md-2">Links</span>
+        </div>
+        <div class="row student-list-mobile-title">
+            <span class="auto-col">Current Students</span>
+        </div>
         <div class="students">
-            <h1>Current Students</h1>
-            <ul class="list-head">
-                <li class="fname-label">First Name</li>
-                <li class="lname-label">Last Name</li>
-                <li class="email-label">BCIT Email</li>
-                <li class="links-label">Links</li>
-            </ul>
-            <div class="student">
-                <p class="fname">Arlene</p>
-                <p class="lname">Ata</p>
-                <p class="email">aata1@my.bcit.ca</p>
-                <ul class="social">
-                    <li class="github"><a href="https://github.com/"><i class="fab fa-github-square"></i></a></li>
-                    <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
+            <div class="row">
+                <span class="col-lg-3 col-md-3 col-auto">Arlene</span>
+                <span class="col-lg-3 col-md-3 col-auto">Ata</span>
+                <span class="col-lg-4 col-md-4">aata1@my.bcit.ca</span>
+                <span class="col-lg-2 col-md-2">
+                    <a href="https://github.com/"><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                </span>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Edward</p>
                 <p class="lname">Bascombe</p>
                 <p class="email">ebascombe1@my.bcit.ca</p>
@@ -84,7 +87,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Armaan</p>
                 <p class="lname">Dhanji</p>
                 <p class="email">adhanji8@my.bcit.ca</p>
@@ -93,7 +96,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Benjamin</p>
                 <p class="lname">Flynn</p>
                 <p class="email">bflynn5@my.bcit.ca</p>
@@ -102,7 +105,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Manveer</p>
                 <p class="lname">Jarosz</p>
                 <p class="email">mjarosz@my.bcit.ca</p>
@@ -111,7 +114,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Metkel</p>
                 <p class="lname">Kahsay Yohannes</p>
                 <p class="email">mkahsayyohannes@my.bcit.ca</p>
@@ -120,7 +123,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Kevin</p>
                 <p class="lname">Kline</p>
                 <p class="email">kkline2@my.bcit.ca</p>
@@ -129,7 +132,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Jan Arveneil</p>
                 <p class="lname">Lingat</p>
                 <p class="email">jlingat1@my.bcit.ca</p>
@@ -138,7 +141,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Liam</p>
                 <p class="lname">MacNeil</p>
                 <p class="email">qmacneil@my.bcit.ca</p>
@@ -147,7 +150,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Duncan</p>
                 <p class="lname">May</p>
                 <p class="email">dmay18@my.bcit.ca</p>
@@ -156,7 +159,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Khoa</p>
                 <p class="lname">Nguyen</p>
                 <p class="email">knguyen@my.bcit.ca</p>
@@ -165,7 +168,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Jeremiah</p>
                 <p class="lname">Okwuolisa</p>
                 <p class="email">jokwuolisa@my.bcit.ca</p>
@@ -174,7 +177,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Daniel</p>
                 <p class="lname">Post</p>
                 <p class="email">dpost3@my.bcit.ca</p>
@@ -183,7 +186,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Vittorio</p>
                 <p class="lname">Rosa</p>
                 <p class="email">vrosa2@my.bcit.ca</p>
@@ -192,7 +195,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">David</p>
                 <p class="lname">Setterlund</p>
                 <p class="email">dsetterlund@my.bcit.ca</p>
@@ -201,7 +204,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Fatemeh</p>
                 <p class="lname">Taheri</p>
                 <p class="email">ftaheri2@my.bcit.ca</p>
@@ -210,7 +213,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Warancha</p>
                 <p class="lname">Tumtaweetikul</p>
                 <p class="email">wtumtaweetikul@my.bcit.ca</p>
@@ -219,7 +222,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Michael</p>
                 <p class="lname">Vande Zande</p>
                 <p class="email">mvandezande@my.bcit.ca</p>
@@ -228,7 +231,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Clayton</p>
                 <p class="lname">Winterbotham</p>
                 <p class="email">cwinterbotham@my.bcit.ca</p>
@@ -237,7 +240,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Wenjie</p>
                 <p class="lname">Xu</p>
                 <p class="email">wxu42@my.bcit.ca</p>
@@ -246,7 +249,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Edhar</p>
                 <p class="lname">Zapeka</p>
                 <p class="email">ezapeka@my.bcit.ca</p>
@@ -255,7 +258,7 @@
                     <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
-            <div class="student">
+            <div class="row justify-content-between">
                 <p class="fname">Lin</p>
                 <p class="lname">Zhou</p>
                 <p class="email">lzhou58@my.bcit.ca</p>
