@@ -65,6 +65,7 @@ h6 {
 
 section h2 {
   font-size: 1.9rem;
+  width: 100%;
 }
 
 span.display-4 {
@@ -129,6 +130,12 @@ main div.student-list-head, main div.student-list-mobile-title {
   color: white;
 }
 
+main section section.resource, main section section.course, main section.staff section.person {
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  background-color: rgba(236, 236, 236, 0.45);
+  border-radius: 5px;
+}
+
 body {
   background-color: rgba(214, 214, 214, 0.685);
   width: 100%;
@@ -177,11 +184,6 @@ main section.overviewTable div.row div:first-of-type:after {
     font-size: 1.4rem;
   }
 }
-main section section.resource {
-  border: 1px solid rgba(0, 0, 0, 0.205);
-  background-color: rgba(236, 236, 236, 0.45);
-  border-radius: 5px;
-}
 main section section.resource p {
   margin: 0;
 }
@@ -196,6 +198,22 @@ main section section.resource img {
     max-width: 40px;
     max-height: 40px;
     padding-right: 0;
+  }
+}
+main section.staff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main section.staff section.person {
+  width: 49%;
+}
+main section.staff section.person p {
+  margin: 0;
+}
+@media (max-width: 61.9375em) {
+  main section.staff section.person {
+    width: 100%;
   }
 }
 @media (max-width: 48em) {
