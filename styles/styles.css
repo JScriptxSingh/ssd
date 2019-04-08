@@ -63,6 +63,10 @@ h6 {
   }
 }
 
+section h2 {
+  font-size: 1.9rem;
+}
+
 span.display-4 {
   display: block;
   margin-bottom: 20px;
@@ -71,6 +75,16 @@ span.display-4 {
 @media (min-width: 61.9375em) {
   span.display-4 {
     text-transform: uppercase;
+  }
+}
+@media (max-width: 61.9375em) {
+  span.display-4 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 36.25em) {
+  span.display-4 {
+    font-size: 2.7rem;
   }
 }
 
@@ -163,6 +177,27 @@ main section.overviewTable div.row div:first-of-type:after {
     font-size: 1.4rem;
   }
 }
+main section section.resource {
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  background-color: rgba(236, 236, 236, 0.45);
+  border-radius: 5px;
+}
+main section section.resource p {
+  margin: 0;
+}
+main section section.resource img {
+  max-width: 50px;
+  max-height: 50px;
+  overflow: hidden;
+  padding-right: 20px;
+}
+@media (max-width: 36.25em) {
+  main section section.resource img {
+    max-width: 40px;
+    max-height: 40px;
+    padding-right: 0;
+  }
+}
 @media (max-width: 48em) {
   main.student-list .display-4 {
     display: none;
@@ -189,22 +224,25 @@ main div.student-list-mobile-title {
   }
 }
 main div.students div.row {
-  padding-top: 5px;
+  padding-top: 8px;
   padding-bottom: 5px;
+}
+main div.students div.row span.email {
+  word-wrap: break-word;
 }
 main div.students div.row:nth-child(odd) {
   background-color: white;
 }
 main div.students div.row:nth-child(odd) .fab {
   color: #d34d24;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 main div.students div.row:nth-child(even) {
   background-color: rgba(211, 77, 36, 0.37);
 }
 main div.students div.row:nth-child(even) .fab {
   color: #d34d24;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 wrapper {
