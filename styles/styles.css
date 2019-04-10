@@ -563,7 +563,6 @@ header .header-title-row {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  height: 7.5rem;
 }
 header .header-title-row .header-title {
   padding-left: 2.1875em;
