@@ -11,3 +11,12 @@
         @content;
     }
 }
+
+@mixin monthHeader {
+    background-color: $site-accent;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 0;
+    color: white;
+    padding-left: 25px;
+}

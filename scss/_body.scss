@@ -301,10 +301,7 @@ main {
                     padding: 0;
 
                     h2 {
-                        @extend %table-header-style;
-                        text-align: left;
-                        padding: 10px;
-                        margin-bottom: 0;
+                        @include monthHeader;
                     }
 
                     ul.month-header {
@@ -390,10 +387,7 @@ main {
                     padding: 0;
 
                     h2 {
-                        background-color: $site-accent;
-                        padding: 10px;
-                        margin: 0;
-                        color: white;
+                        @include monthHeader;
                     }
 
                     ul.month-header {
@@ -403,7 +397,7 @@ main {
                     div.grid {
                         .day {
                             width: 100%;
-                            padding: 10px 5px;
+                            padding: 10px 15px;
                             border-radius: 0;
                             vertical-align: middle;
                             margin: 0;
@@ -459,6 +453,10 @@ main {
                                 width: 70%;
                                 vertical-align: bottom;
                                 font-weight: 500;
+
+                                @include mq($phone-wide) {
+                                    width: 100%;
+                                }
                             }
                         }
                     }
@@ -466,8 +464,7 @@ main {
             }
 
             #toggleView {
-                @include mq($navbar-breakpoint)
-                {
+                @include mq($navbar-breakpoint) {
                     & {
                         display: none;
                     }

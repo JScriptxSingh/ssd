@@ -147,7 +147,7 @@ body {
   margin: 0;
 }
 
-main section.schedule.list section.month h2, main div.student-list-head, main div.student-list-mobile-title {
+main div.student-list-head, main div.student-list-mobile-title {
   background-color: #d34d24;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -373,9 +373,12 @@ main section.schedule.list section.month {
   padding: 0;
 }
 main section.schedule.list section.month h2 {
+  background-color: #d34d24;
   text-align: left;
   padding: 10px;
   margin-bottom: 0;
+  color: white;
+  padding-left: 25px;
 }
 main section.schedule.list section.month ul.month-header {
   display: none;
@@ -441,16 +444,18 @@ main section.schedule.list section.month div.grid .day h4.date {
   }
   main section.schedule section.month h2 {
     background-color: #d34d24;
+    text-align: left;
     padding: 10px;
-    margin: 0;
+    margin-bottom: 0;
     color: white;
+    padding-left: 25px;
   }
   main section.schedule section.month ul.month-header {
     display: none;
   }
   main section.schedule section.month div.grid .day {
     width: 100%;
-    padding: 10px 5px;
+    padding: 10px 15px;
     border-radius: 0;
     vertical-align: middle;
     margin: 0;
@@ -497,6 +502,12 @@ main section.schedule.list section.month div.grid .day h4.date {
     font-weight: 500;
   }
 }
+@media (max-width: 61.9375em) and (max-width: 36.25em) {
+  main section.schedule section.month div.grid .day h4.date {
+    width: 100%;
+  }
+}
+
 @media (max-width: 61.9375em) {
   main section.schedule #toggleView {
     display: none;
