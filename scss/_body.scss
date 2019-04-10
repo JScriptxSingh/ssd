@@ -13,9 +13,19 @@
     border-radius: 5px;
 }
 
+%flex-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 body {
     background-color: $bg-body-color;
     width: 100%;
+}
+
+.flex {
+    display: flex;
 }
 
 .bg-white {
@@ -117,9 +127,7 @@ main {
         }
 
         &.staff {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            @extend %flex-section;
 
             section.person {
                 @extend %sub-section-style;
@@ -146,7 +154,7 @@ main {
                     }
                 }
 
-                @include mq($navbar-breakpoint){
+                @include mq($navbar-breakpoint) {
                     & {
                         width: 100%;
                     }
@@ -162,6 +170,46 @@ main {
                         padding-left: 10px;
                         padding-left: 10px;
                     }
+                }
+            }
+        }
+
+        &.sub-contact {
+            div.contact-info {
+                @extend %flex-section;
+
+                section.sub-contact-info {
+                    @extend %sub-section-style;
+                    width: 49%;
+
+                    @include mq($navbar-breakpoint) {
+                        & {
+                            width: 100%;
+                        }
+                    }
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+
+                        li {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            section.map {
+                @extend %sub-section-style;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                height: 45vh;
+                padding: 0;
+
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                    border: 0;
                 }
             }
         }

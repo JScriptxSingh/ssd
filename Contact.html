@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BCIT SSD Program - Contact Information</title>
-    <!-- <script>
-        // REDIRECT TO HTTPS PROTOCOL IF NOT IN DEVELOPMENT ENVIRONMENT OR BEING TESTED ON LOCAL NETWORK
-        if (document.location.protocol != "https:" && !document.location.host.includes("localhost")) {
-            document.location = document.URL.replace(/^http:/i, "https:");
-        }
-    </script> -->
+    <script src="./scripts/httpsRedirect.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -60,41 +55,51 @@
     </header>
     <main class="container">
         <span class="display-4 text-center">Contact Us</span>
-            <section>
-                <h2>Helpful Links</h2>
-                <ul>
-                    <li><a href="https://secure.bcit.ca/sis/apply/">Start your application.</a></li>
-                    <li><a href="https://secure.bcit.ca/sis/apply/">Check your application status.</a></li>
-                    <li><a href="https://www.bcit.ca/international/">Find more information for international
-                            students.</a></li>
-                    <li><a href="https://www.bcit.ca/finaid/">Find more information about financial aids.</a></li>
-                </ul>
-            </section>
-            <section>
-                <h2>Contact Information</h2>
-                <div class="contactInfo">
-                    <section>
-                        <h4>For admission and program inquiries: </h4>
-                        <ul>
-                            <li><b>Phone: </b>604.412.7788</li>
-                            <li><b>Fax: </b>604.408.0921</li>
-                            <li><b>Email: </b>HTP@bcit.ca</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h4>Mailing address: </h4>
-                        <ul>
-                            <li>
-                                HTP Programs - BCIT Downtown Campus<br />
+        <section>
+            <h2>Helpful Links</h2>
+            <ul>
+                <li><a href="https://secure.bcit.ca/sis/apply/">Start your application.</a></li>
+                <li><a href="https://secure.bcit.ca/sis/apply/">Check your application status.</a></li>
+                <li><a href="https://www.bcit.ca/international/">Find more information for international
+                        students.</a></li>
+                <li><a href="https://www.bcit.ca/finaid/">Find more information about financial aids.</a></li>
+            </ul>
+        </section>
+        <section class="sub-contact">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <section class="sub-contact-info no-mb-lg">
+                    <h4>For admission and program inquiries: </h4>
+                    <ul>
+                        <li><span class="fa-icon"><i class="fas fa-phone"></i></span>604.412.7788</li>
+                        <li><span class="fa-icon"><i class="fas fa-fax"></i></span>604.408.0921</li>
+                        <li><span class="fa-icon"><i class="fas fa-at"></i></span>HTP@bcit.ca</li>
+                    </ul>
+                </section>
+                <section class="sub-contact-info">
+                    <h4>Mailing address: </h4>
+                    <ul>
+                        <li class="flex">
+                            <span class="fa-icon"><i class="fas fa-envelope"></i></span>
+                            <span>
+                                HTP Programs<br />
+                                BCIT Downtown Campus<br />
                                 350 - 555 Seymour Street<br />
                                 Vancouver, BC, Canada <br />
                                 V6B 3H6
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-                <p><a href="https://www.bcit.ca/about/downtown.shtml">Campus info, map, and directions</a></p>
+                            </span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20819.728847076112!2d-123.113074!3d49.28651300000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867178c92a69b9%3A0x6b40938af55472d6!2s555+Seymour+St%2C+Vancouver%2C+BC+V6B%2+Canada!5e0!3m2!1sen!2sus!4v1466635497209" allowfullscreen="">
+                </iframe>
+
             </section>
+            <p><a href="https://www.bcit.ca/about/downtown.shtml">More info.</a></p>
+        </section>
         <section>
             <h2>Contact Form</h2>
             <form onSubmit="alert('Thank you for your feedback.');" method="post" class="form">
