@@ -1,11 +1,4 @@
 document.addEventListener("DOMContentLoaded",  function() {
-    // toggle mobile hamburger
-    let hamburger = document.querySelector('.hamburger');
-    let body = document.querySelector('body');
-    hamburger.onclick = function () {
-        body.classList.toggle('show');
-    }
-
     // generate to top button
     let toTopBtn = document.createElement('button');
     toTopBtn.appendChild(document.createTextNode("Top"));
@@ -25,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function(){
     let schedule = document.querySelector('.schedule');
     let isList = false;
     toggleBtn.onclick = function() {
-        schedule.classList.toggle('list-view');
+        schedule.classList.toggle('list');
         isList = !isList;
         if (isList) {
-            toggleBtn.textContent = "# Grid View";
+            toggleBtn.textContent = "<i class='fas fa-grip-horizontal'></i> Grid View";
         } else {
             toggleBtn.textContent = String.fromCharCode(9776) + " List View";
         }

@@ -213,6 +213,267 @@ main {
                 }
             }
         }
+
+        &.schedule {
+            section.month {
+                @extend %sub-section-style;
+                margin-top: 20px;
+                padding: 7px;
+                border-radius: 15px;
+                overflow: hidden;
+
+                h2 {
+                    text-align: center;
+                }
+
+                ul.month-header {
+                    @extend %flex-section;
+                    list-style: none;
+                    padding: 0;
+                    margin: 1px;
+
+                    li.week-head {
+                        width: 19.5%;
+                        text-align: center;
+                        background-color: $site-accent;
+                        padding: 5px;
+                        border-radius: 10px;
+                        color: white;
+                        font-size: 1.3rem;
+                    }
+                }
+
+                div.grid {
+                    @extend %flex-section;
+
+                    .day {
+                        width: 19.5%;
+                        background-color: white;
+                        margin-top: 3px;
+                        margin-bottom: 3px;
+                        padding: 20px 10px 10px;
+                        border-radius: 10px;
+                        display: flex;
+                        flex-flow: column;
+
+                        p {
+                            padding: 0;
+                            font-size: 1rem;
+
+                            &.day-name {
+                                font-family: 'Roboto', sans-serif;
+                                display: none;
+                            }
+
+                            &.course {
+                                color: $site-accent;
+                                flex: 1 0 auto;
+                            }
+
+                            &.notes {
+                                color: gray;
+                                font-size: 0.8rem;
+                            }
+
+                            &.instructor {
+                                padding: 0;
+                                font-style: italic;
+                            }
+                        }
+
+                        h4.date {
+                            font-size: 1.0rem;
+                            padding: 0;
+                            font-weight: 500;
+                            font-family: 'Roboto', sans-serif;
+                        }
+
+                        &.today {
+                            border: 2px solid $site-accent;
+                        }
+                    }
+                }
+            }
+
+
+            &.list {
+                section.month {
+                    padding: 0;
+
+                    h2 {
+                        @extend %table-header-style;
+                        text-align: left;
+                        padding: 10px;
+                        margin-bottom: 0;
+                    }
+
+                    ul.month-header {
+                        display: none;
+                    }
+
+                    div.grid {
+                        .day {
+                            width: 100%;
+                            padding: 10px 5px;
+                            border-radius: 0;
+                            margin: 0;
+
+                            @include rmq($navbar-breakpoint) {
+                                & {
+                                    flex-flow: nowrap;
+                                }
+                            }
+
+                            &:nth-child(even) {
+                                background-color: $table-highlight-even;
+                            }
+
+                            &:nth-child(odd) {
+                                background-color: $table-highlight-odd;
+                            }
+
+                            &.day-placeholder {
+                                display: none;
+                            }
+
+                            &.day-flex {
+                                p.instructor {
+                                    display: none;
+                                }
+                            }
+
+                            p {
+                                margin: 0;
+                                font-size: 1rem;
+
+                                &.day-name {
+                                    display: inline-block;
+
+                                    @include rmq($navbar-breakpoint) {
+                                        & {
+                                            width: 15%;
+                                            padding-left: 20px;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+
+                                &.notes {
+                                    display: none;
+                                }
+
+                                &.instructor {
+                                    @include rmq($navbar-breakpoint) {
+                                        width: 30%;
+                                    }
+                                }
+                            }
+
+                            h4.date {
+                                font-size: 1rem;
+                                margin: 0;
+
+                                @include rmq($navbar-breakpoint) {
+                                    & {
+                                        width: 20%;
+                                        font-weight: 400;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include mq($navbar-breakpoint) {
+                section.month {
+                    padding: 0;
+
+                    h2 {
+                        background-color: $site-accent;
+                        padding: 10px;
+                        margin: 0;
+                        color: white;
+                    }
+
+                    ul.month-header {
+                        display: none;
+                    }
+
+                    div.grid {
+                        .day {
+                            width: 100%;
+                            padding: 10px 5px;
+                            border-radius: 0;
+                            vertical-align: middle;
+                            margin: 0;
+                            display: flex;
+                            flex-flow: nowrap;
+                            flex-wrap: wrap;
+
+                            &:nth-child(even) {
+                                background-color: $table-highlight-even;
+                            }
+
+                            &:nth-child(odd) {
+                                background-color: $table-highlight-odd;
+                            }
+
+                            &.day-placeholder {
+                                display: none;
+                            }
+
+                            &.day-flex {
+                                p.instructor {
+                                    display: none;
+                                }
+                            }
+
+                            p {
+                                margin: 0;
+                                font-size: 1rem;
+
+                                &.day-name {
+                                    display: block;
+                                    padding: 0;
+                                    padding-right: 20px;
+                                }
+
+                                &.course {
+                                    width: 100%;
+                                }
+
+                                &.notes {
+                                    display: block;
+                                    width: 100%;
+                                }
+
+                                &.instructor {
+                                    width: 100%;
+                                }
+                            }
+
+                            h4.date {
+                                font-size: 1rem;
+                                margin: 0;
+                                width: 70%;
+                                vertical-align: bottom;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #toggleView {
+                @include mq($navbar-breakpoint)
+                {
+                    & {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 
     @include mq($tablet-portait) {

@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Staatliches');
 @import url('https://fonts.googleapis.com/css?family=Boogaloo');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
 @import url('https://fonts.googleapis.com/css?family=Acme');
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Bangers');
 @import url('https://fonts.googleapis.com/css?family=Passion+One');
 @import url('https://fonts.googleapis.com/css?family=Carter+One');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Jaldi');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
 
 
 body {
@@ -116,6 +119,7 @@ span.display-4 {
 section.overviewTable {
     .row {
         div:first-of-type {
+            font-weight: 600;
             @include mq($navbar-breakpoint) {
                 text-transform: uppercase;
             }

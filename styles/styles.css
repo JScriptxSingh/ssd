@@ -1,13 +1,16 @@
 /* CSS Document */
 @import url("https://fonts.googleapis.com/css?family=Staatliches");
 @import url("https://fonts.googleapis.com/css?family=Boogaloo");
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
 @import url("https://fonts.googleapis.com/css?family=Acme");
 @import url("https://fonts.googleapis.com/css?family=Anton");
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Bangers");
 @import url("https://fonts.googleapis.com/css?family=Passion+One");
 @import url("https://fonts.googleapis.com/css?family=Carter+One");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Jaldi");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -107,6 +110,9 @@ span.display-4 {
   }
 }
 
+section.overviewTable .row div:first-of-type {
+  font-weight: 600;
+}
 @media (max-width: 61.9375em) {
   section.overviewTable .row div:first-of-type {
     text-transform: uppercase;
@@ -141,20 +147,20 @@ body {
   margin: 0;
 }
 
-main div.student-list-head, main div.student-list-mobile-title {
+main section.schedule.list section.month h2, main div.student-list-head, main div.student-list-mobile-title {
   background-color: #d34d24;
   padding-top: 5px;
   padding-bottom: 5px;
   color: white;
 }
 
-main section section.resource, main section section.course, main section.staff section.person, main section.sub-contact div.contact-info section.sub-contact-info, main section.sub-contact section.map {
+main section section.resource, main section section.course, main section.staff section.person, main section.sub-contact div.contact-info section.sub-contact-info, main section.sub-contact section.map, main section.schedule section.month {
   border: 1px solid rgba(0, 0, 0, 0.205);
   background-color: rgba(236, 236, 236, 0.45);
   border-radius: 5px;
 }
 
-main section.staff, main section.sub-contact div.contact-info {
+main section.staff, main section.sub-contact div.contact-info, main section.schedule section.month ul.month-header, main section.schedule section.month div.grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -301,6 +307,201 @@ main section.sub-contact section.map iframe {
   height: 100%;
   border: 0;
 }
+main section.schedule section.month {
+  margin-top: 20px;
+  padding: 7px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+main section.schedule section.month h2 {
+  text-align: center;
+}
+main section.schedule section.month ul.month-header {
+  list-style: none;
+  padding: 0;
+  margin: 1px;
+}
+main section.schedule section.month ul.month-header li.week-head {
+  width: 19.5%;
+  text-align: center;
+  background-color: #d34d24;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.3rem;
+}
+main section.schedule section.month div.grid .day {
+  width: 19.5%;
+  background-color: white;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 20px 10px 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+}
+main section.schedule section.month div.grid .day p {
+  padding: 0;
+  font-size: 1rem;
+}
+main section.schedule section.month div.grid .day p.day-name {
+  font-family: 'Roboto', sans-serif;
+  display: none;
+}
+main section.schedule section.month div.grid .day p.course {
+  color: #d34d24;
+  flex: 1 0 auto;
+}
+main section.schedule section.month div.grid .day p.notes {
+  color: gray;
+  font-size: 0.8rem;
+}
+main section.schedule section.month div.grid .day p.instructor {
+  padding: 0;
+  font-style: italic;
+}
+main section.schedule section.month div.grid .day h4.date {
+  font-size: 1.0rem;
+  padding: 0;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+main section.schedule section.month div.grid .day.today {
+  border: 2px solid #d34d24;
+}
+main section.schedule.list section.month {
+  padding: 0;
+}
+main section.schedule.list section.month h2 {
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 0;
+}
+main section.schedule.list section.month ul.month-header {
+  display: none;
+}
+main section.schedule.list section.month div.grid .day {
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 0;
+  margin: 0;
+}
+@media (min-width: 61.9375em) {
+  main section.schedule.list section.month div.grid .day {
+    flex-flow: nowrap;
+  }
+}
+main section.schedule.list section.month div.grid .day:nth-child(even) {
+  background-color: rgba(211, 77, 36, 0.288);
+}
+main section.schedule.list section.month div.grid .day:nth-child(odd) {
+  background-color: white;
+}
+main section.schedule.list section.month div.grid .day.day-placeholder {
+  display: none;
+}
+main section.schedule.list section.month div.grid .day.day-flex p.instructor {
+  display: none;
+}
+main section.schedule.list section.month div.grid .day p {
+  margin: 0;
+  font-size: 1rem;
+}
+main section.schedule.list section.month div.grid .day p.day-name {
+  display: inline-block;
+}
+@media (min-width: 61.9375em) {
+  main section.schedule.list section.month div.grid .day p.day-name {
+    width: 15%;
+    padding-left: 20px;
+    font-weight: 500;
+  }
+}
+main section.schedule.list section.month div.grid .day p.notes {
+  display: none;
+}
+@media (min-width: 61.9375em) {
+  main section.schedule.list section.month div.grid .day p.instructor {
+    width: 30%;
+  }
+}
+main section.schedule.list section.month div.grid .day h4.date {
+  font-size: 1rem;
+  margin: 0;
+}
+@media (min-width: 61.9375em) {
+  main section.schedule.list section.month div.grid .day h4.date {
+    width: 20%;
+    font-weight: 400;
+  }
+}
+@media (max-width: 61.9375em) {
+  main section.schedule section.month {
+    padding: 0;
+  }
+  main section.schedule section.month h2 {
+    background-color: #d34d24;
+    padding: 10px;
+    margin: 0;
+    color: white;
+  }
+  main section.schedule section.month ul.month-header {
+    display: none;
+  }
+  main section.schedule section.month div.grid .day {
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 0;
+    vertical-align: middle;
+    margin: 0;
+    display: flex;
+    flex-flow: nowrap;
+    flex-wrap: wrap;
+  }
+  main section.schedule section.month div.grid .day:nth-child(even) {
+    background-color: rgba(211, 77, 36, 0.288);
+  }
+  main section.schedule section.month div.grid .day:nth-child(odd) {
+    background-color: white;
+  }
+  main section.schedule section.month div.grid .day.day-placeholder {
+    display: none;
+  }
+  main section.schedule section.month div.grid .day.day-flex p.instructor {
+    display: none;
+  }
+  main section.schedule section.month div.grid .day p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  main section.schedule section.month div.grid .day p.day-name {
+    display: block;
+    padding: 0;
+    padding-right: 20px;
+  }
+  main section.schedule section.month div.grid .day p.course {
+    width: 100%;
+  }
+  main section.schedule section.month div.grid .day p.notes {
+    display: block;
+    width: 100%;
+  }
+  main section.schedule section.month div.grid .day p.instructor {
+    width: 100%;
+  }
+  main section.schedule section.month div.grid .day h4.date {
+    font-size: 1rem;
+    margin: 0;
+    width: 70%;
+    vertical-align: bottom;
+    font-weight: 500;
+  }
+}
+@media (max-width: 61.9375em) {
+  main section.schedule #toggleView {
+    display: none;
+  }
+}
 @media (max-width: 48em) {
   main.student-list .display-4 {
     display: none;
@@ -341,7 +542,7 @@ main div.students div.row:nth-child(odd) .fab {
   font-size: 1.7rem;
 }
 main div.students div.row:nth-child(even) {
-  background-color: rgba(211, 77, 36, 0.37);
+  background-color: rgba(211, 77, 36, 0.288);
 }
 main div.students div.row:nth-child(even) .fab {
   color: #d34d24;
