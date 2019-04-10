@@ -154,13 +154,13 @@ main div.student-list-head, main div.student-list-mobile-title {
   color: white;
 }
 
-main section section.resource, main section section.course, main section.staff section.person, main section.sub-contact div.contact-info section.sub-contact-info, main section.sub-contact section.map, main section.schedule section.month {
+main section section.resource, main section section.course, main section.staff section.person, main section.schedule section.month, main section.sub-contact div.contact-info section.sub-contact-info, main section.sub-contact section.map {
   border: 1px solid rgba(0, 0, 0, 0.205);
   background-color: rgba(236, 236, 236, 0.45);
   border-radius: 5px;
 }
 
-main section.staff, main section.sub-contact div.contact-info, main section.schedule section.month ul.month-header, main section.schedule section.month div.grid {
+main section.staff, main section.schedule section.month ul.month-header, main section.schedule section.month div.grid, main section.sub-contact div.contact-info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -280,32 +280,6 @@ main section.staff section.person p.email {
     padding-left: 10px;
     padding-left: 10px;
   }
-}
-main section.sub-contact div.contact-info section.sub-contact-info {
-  width: 49%;
-}
-@media (max-width: 61.9375em) {
-  main section.sub-contact div.contact-info section.sub-contact-info {
-    width: 100%;
-  }
-}
-main section.sub-contact div.contact-info section.sub-contact-info ul {
-  list-style: none;
-  padding: 0;
-}
-main section.sub-contact div.contact-info section.sub-contact-info ul li {
-  text-decoration: none;
-}
-main section.sub-contact section.map {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: 45vh;
-  padding: 0;
-}
-main section.sub-contact section.map iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
 }
 main section.schedule section.month {
   margin-top: 20px;
@@ -560,12 +534,6 @@ main div.students div.row:nth-child(even) .fab {
   font-size: 1.7rem;
 }
 
-wrapper {
-  max-width: 1024px;
-  background-color: white;
-  margin: 0 auto;
-}
-
 header {
   background-color: white;
 }
@@ -753,6 +721,33 @@ footer .copy {
   padding-bottom: 20px;
   padding-top: 20px;
   background-color: #323232;
+}
+
+main section.sub-contact div.contact-info section.sub-contact-info {
+  width: 49%;
+}
+@media (max-width: 61.9375em) {
+  main section.sub-contact div.contact-info section.sub-contact-info {
+    width: 100%;
+  }
+}
+main section.sub-contact div.contact-info section.sub-contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+main section.sub-contact div.contact-info section.sub-contact-info ul li {
+  text-decoration: none;
+}
+main section.sub-contact section.map {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 45vh;
+  padding: 0;
+}
+main section.sub-contact section.map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
