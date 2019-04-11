@@ -840,6 +840,9 @@ main section.contact-form form div.form-row input {
   border-radius: 7px;
   border: 1px solid rgba(0, 0, 0, 0.205);
 }
+main section.contact-form form div.form-row input[type=button] {
+  border-color: #d34d24;
+}
 main section.contact-form form div.form-row.radio-choice {
   width: 99%;
   display: flex;

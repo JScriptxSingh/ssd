@@ -71,7 +71,11 @@ main {
                         margin-bottom: 15px;
                         padding: 5px 15px;
                         border-radius: 7px;
-                            border: 1px solid $border-light;
+                        border: 1px solid $border-light;
+
+                        &[type=button] {
+                            border-color: $site-accent;
+                        }
                     }
 
                     &.radio-choice {
