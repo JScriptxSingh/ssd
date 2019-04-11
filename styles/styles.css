@@ -838,10 +838,10 @@ main section.contact-form form div.form-row label {
 main section.contact-form form div.form-row input {
   margin-bottom: 15px;
   padding: 5px 15px;
-  border-radius: 7px;
+  border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.205);
 }
-main section.contact-form form div.form-row input[type=button] {
+main section.contact-form form div.form-row input[type=submit] {
   border-color: #d34d24;
 }
 main section.contact-form form div.form-row.radio-choice {
@@ -850,15 +850,12 @@ main section.contact-form form div.form-row.radio-choice {
   background-color: white;
   vertical-align: baseline;
   justify-content: space-between;
-  border-radius: 7px;
+  border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.205);
   margin-top: 5px;
   margin-bottom: 15px;
-}
-@media (max-width: 48em) {
-  main section.contact-form form div.form-row.radio-choice {
-    padding-left: 20px;
-  }
+  padding-left: 20px;
+  padding-right: 20px;
 }
 main section.contact-form form div.form-row.radio-choice input {
   width: 20px;
@@ -882,7 +879,7 @@ main section.contact-form form div.form-row.message textarea {
   width: 100%;
   margin-bottom: 25px;
   padding: 5px 15px 25px;
-  border-radius: 7px;
+  border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.205);
 }
 
