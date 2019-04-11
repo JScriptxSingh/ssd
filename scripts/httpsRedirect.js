@@ -16,7 +16,7 @@ if (document.location.host.includes("192")) {
 }
 
 // USING FILE SYSTEM
-if (document.location.protocol != "file:") {
+if (document.location.protocol == "file:") {
     devEnv = true;
 }
 
