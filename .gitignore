@@ -2,8 +2,6 @@
 .DS_Store/
 .DS_Store
 
-scripts/httpsRedirect.js
-
 *.seed
 *.log
 *.csv
