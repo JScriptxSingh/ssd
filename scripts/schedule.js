@@ -18,6 +18,12 @@ $( document ).ready(function() {
     for (i = 0; i < dateTags.length; i++) {
         if (dateTags[i].innerHTML == today) {
             dateTags[i].parentElement.classList.add("today")
+
+            var bookmark = document.createElement('span');
+            bookmark.innerHTML = "<i class='fas fa-bookmark'></i>";
+            bookmark.id = "today-bookmark";
+
+            dateTags[i].parentElement.appendChild(bookmark);
             break;
         }
     }

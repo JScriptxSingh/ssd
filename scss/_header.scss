@@ -8,6 +8,7 @@ header {
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
+        margin: -1px;
 
         .header-title {
             padding-left: em(35);
@@ -41,13 +42,20 @@ header {
             }
         }
 
-        @include mq($tablet-portait) {
+        @include mq($navbar-breakpoint) {
             & {
                 justify-content: left;
+                padding-left: 35px;
 
                 .header-title {
                     padding-left: em(10);
                 }
+            }
+        }
+
+        @include mq($tablet-portait) {
+            & {
+                padding-left: 0;
             }
         }
 
@@ -62,6 +70,7 @@ header {
             @include mq($phone-wide) {
                 & {
                     display: block;
+                    padding-left: 30px;
                     h1 {
                     font-size: 3rem;
                     }
@@ -76,7 +85,7 @@ header {
                 & {
                     display: block;
                     position: absolute;
-                    right: 10px;
+                    right: 25px;
                 }
             }
         }

@@ -219,6 +219,7 @@ main {
                         p {
                             padding: 0;
                             font-size: 1rem;
+                            z-index: 5;
 
                             &.day-name {
                                 font-family: 'Roboto', sans-serif;
@@ -245,11 +246,28 @@ main {
                             font-size: 1.0rem;
                             padding: 0;
                             font-weight: 500;
+                            z-index: 5;
                             font-family: 'Roboto', sans-serif;
                         }
 
                         &.today {
-                            border: 2px solid $site-accent;
+                            position: relative;
+
+                            #today-bookmark {
+                                position: absolute;
+                                right: 10px;
+                                top: 0;
+                                width: 20px;
+                                overflow: hidden;
+                                font-size: 3rem;
+                                color: $site-accent;
+                                height: stretch;
+                                z-index: 2;
+
+                                i {
+                                    margin-left: -8px;
+                                }
+                            }
                         }
                     }
                 }

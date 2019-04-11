@@ -1,0 +1,33 @@
+// BOOTSTRAP CUSTOMIZATIONS
+
+.btn-outline-primary {
+    color: $site-accent;
+    background-color: transparent;
+    background-image: none;
+    border-color: $site-accent;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: $site-accent;
+    border-color: $site-accent;
+}
+
+.btn-outline-primary.focus,
+.btn-outline-primary:focus {
+    box-shadow: none;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: $site-accent;
+    border-color: $site-accent;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}

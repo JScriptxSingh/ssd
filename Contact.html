@@ -94,71 +94,46 @@
             </div>
 
             <section class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20819.728847076112!2d-123.113074!3d49.28651300000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867178c92a69b9%3A0x6b40938af55472d6!2s555+Seymour+St%2C+Vancouver%2C+BC+V6B%2+Canada!5e0!3m2!1sen!2sus!4v1466635497209" allowfullscreen="">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20819.728847076112!2d-123.113074!3d49.28651300000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867178c92a69b9%3A0x6b40938af55472d6!2s555+Seymour+St%2C+Vancouver%2C+BC+V6B%2+Canada!5e0!3m2!1sen!2sus!4v1466635497209"
+                    allowfullscreen="">
                 </iframe>
 
             </section>
             <p><a href="https://www.bcit.ca/about/downtown.shtml">More info.</a></p>
         </section>
-        <section>
+        <section class="contact-form">
             <h2>Contact Form</h2>
-            <form onSubmit="alert('Thank you for your feedback.');" method="post" class="form">
-                <div class="formRow">
-                    <div class="formLabel">
-                        <label for="firstname">First name</label>
-                    </div>
-                    <div class="formInput">
-                        <input type="text" name="firstname" id="firstname" maxlength="80" placeholder="First Last"
-                            required>
-                    </div>
+            <form method="POST" action="https://formspree.io/jassbhamra@outlook.com">
+                <div class="form-row">
+                    <label for="firstname">First name</label>
+                    <input type="text" name="firstname" id="firstname" maxlength="80" placeholder="First Last" required>
                 </div>
-                <div class="formRow">
-                    <div class="formLabel">
-                        <label for="lastname">Last name</label>
-                    </div>
-                    <div class="formInput">
-                        <input type="text" name="lastname" id="lastname" maxlength="80" placeholder="Last Last"
-                            required>
-                    </div>
+                <div class="form-row">
+                    <label for="lastname">Last name</label>
+                    <input type="text" name="lastname" id="lastname" maxlength="80" placeholder="Last Last" required>
                 </div>
-                <div class="formRow">
-                    <div class="formLabel">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="formInput">
-                        <input type="email" name="email" id="email" maxlength="80" placeholder="email@example.com"
-                            required>
-                    </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" maxlength="80" placeholder="email@example.com" required>
                 </div>
-                <div class="formRow">
-                    <div class="formLabel">
-                        <label for="phone">Phone</label>
-                    </div>
-                    <div class="formInput">
-                        <input type="text" name="phone" id="phone" maxlength="30" placeholder="(123) 456 - 7890">
-                    </div>
+                <div class="form-row">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" maxlength="30" placeholder="(123) 456 - 7890">
                 </div>
-                <div class="formRow">
-                    <div class="select">
-                        <label><input type="radio" name="status" value="CurrentStudent" required> Current
-                            Student</label><br>
-                        <label><input type="radio" name="status" value="ProsoectiveStudent"> Prosoective
-                            Student</label><br>
-                        <label><input type="radio" name="status" value="Instructor"> Instructor</label>
-                    </div>
+                <div class="form-row radio-choice">
+                    <label><input type="radio" name="status" value="CurrentStudent" required> Current
+                        Student</label>
+                    <label><input type="radio" name="status" value="ProsoectiveStudent"> Prosoective
+                        Student</label>
+                    <label><input type="radio" name="status" value="Instructor"> Instructor</label>
                 </div>
-                <div class="formRow">
-                    <div>
-                        <label for="comments">Questions or Comments</label>
-                    </div>
-                    <div>
-                        <textarea name="comments" id="comments" rows="5" cols="23" required></textarea>
-                    </div>
+                <div class="form-row message">
+                    <label for="comments">Questions or Comments</label>
+                    <textarea name="comments" id="comments" rows="5" cols="23" placeholder=" . . ." required></textarea>
                 </div>
-                <div class="formRow">
-                    <div class="actions">
-                        <input id="submit" type="submit" value="send &raquo; ">
-                    </div>
+                <div class="form-row">
+                    <input type="button" class="btn btn-outline-primary" id="submit" value="SEND" />
                 </div>
             </form>
         </section>
@@ -196,6 +171,8 @@
     </footer>
 
     <script src="./scripts/setActive.js"></script>
+
+    <script src="./scripts/sendEmail.js" defer></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
