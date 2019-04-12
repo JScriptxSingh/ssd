@@ -717,7 +717,8 @@ nav.navbar .active-link {
 }
 @media (max-width: 30em) {
   .home-banner h1 {
-    font-size: 1.6rem;
+    top: 60%;
+    font-size: 1.4rem;
   }
 }
 
